@@ -1,0 +1,26 @@
+Source:https://www.linkedin.com/advice/3/what-key-steps-secure-front-end-forms-skills-web-development-2dxdc?lang=fr&lang=fr&lang=fr&originalSubdomain=fr
+
+1. Valider l'entrée:
+S'assurer que la saisie correspond au conditions de sécurité recommandées et définies comme le format, la longueur et le type de l'entrée.
+Utiliser des attributs HTML5, des fonctions JavaScript ou des bibliothèques telles que jQuery Validate pour la vérification côté client. Valider côté serveur aussi.
+
+2. Assainir la sortie:
+L'assainissement consiste à supprimer ou à échapper tout caractère ou code potentiellement dangereux qui pourrait s’exécuter sur votre site Web. Peut éviter le cross-site scripting(XSS) qui pourraient permettre au pirates d'injecter du code malveillant et d'accéder aux données utilisateurs ou aux cookies.
+Utiliser des fonctions telles que htmlspecialchars ou strip_ en PHP ou des bibliothèques comme DOMPurify ou sanitize-html en JavaScript pour assainir la sortie côté serveur ou côté client.
+
+3. Chiffrer les données:
+Le chiffrement consiste à convertir les données en un code secret qui ne peut être déchiffré que par des parties autorisées.
+Utiliser le protocole HTTPS, des certificats SSL ou des bibliothèque telles que CryptoJS ou bcrypt ou password_hash pour chiffrer les données clients ou serveur.
+
+4. Utiliser des jetons:
+Utiliser des jetons pour vérifier l’identité et l’authenticité de vos utilisateurs et de vos formulaires. Les jetons sont des chaînes de caractères aléatoires qui sont générées et attribuées aux utilisateurs et aux formulaires. Les jetons peuvent empêcher la falsification de requêtes intersites (Le CSRF)(Cross Site Request Forgery) , qui peuvent permettre aux pirates de soumettre des formulaires au nom de vos utilisateurs sans leur consentement. Pour des actions sensibles utiliser CAPTCHAs/ReCAPTCHA pour détecter les robots.
+Utiliser des frameworks tels que Laravel ou Express pour générer et valider des jetons côté serveur.
+
+5. Limiter les demandes:
+Limiter le nombre et la fréquence des demandes utilisateurs sur un formulaire, imposer un nombre maximum de demandes avant de les verrouiller ou un intervalle de demandes pendant un certain laps de temps. Peut empêcher les attaques par force brute qui peuvent permettre aux pirates de deviner ou déchiffrer les identifiants utilisateurs.
+Utiliser des bibliothèques telles que express-rate-limit ou rate-limiter-flexible pour limiter les requêtes serveur.
+
+6.Mettre à jour les dépendances:
+Les dépendances sont des bibliothèques ou des packages externes que vous installez et importez dans votre code pour ajouter des fonctionnalités ou des caractéristiques à vos formulaires. Bootstrap ou Materialize pour styliser les formulaires, mettre à jour régulièrement pour corriger des bogues ou des vulnérabilités. Peut empêcher les pirates d'exploiter ces vulnérabilités.
+Utiliser des outils tels que npm ou yarn pour mettre à jour les dépendances côté client ou côté serveur. 
+  
