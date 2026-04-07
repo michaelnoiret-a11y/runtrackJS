@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <nav class="mx-auto flex flex-row gap-6 p-3 bg-black text-red-600">
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Accueil</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Inscription</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Connexion</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Rechercher</a>
+        </div>
+        </nav>
+        </header>
+        <!-- <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+  <div>
+    <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+      <svg class="h-6 w-6 stroke-white" ...>
+         ...
+      </svg>
+    </span>
+  </div>
+  <button class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight "></button>
+  <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
+  </p>
+</div> -->
+        <br >
+        <section class="container ">
+            <form class="flex flex-col items-center" method="post">
+                <label for="civilite">Civilité</label>
+                <br>
+                <p>
+      <label>
+        <input name="civilite" type="radio" checked required />
+        <span>Mme</span>
+      </label>
+    </p>
+                <p>
+      <label>
+        <input name="civilite" type="radio" />
+        <span>Mr</span>
+      </label>
+    </p>
+                <input type="text" name="prenom" placeholder="prenom" required>
+                <br>
+                <input type="text" name="nom" placeholder="nom" required>
+                <br>
+                <input type="text" name="adresse" placeholder="adresse" required>
+                <br>
+                <input type="email" name="email" placeholder="email" required>
+                <br>
+                <input type="email" name="email verif" placeholder="email verif" required>
+                <br>
+                <input type="password" name="mot de passe" placeholder="mot de passe" required>
+                <br>
+                <input type="password" name="mot de passe verif" placeholder="mot de passe verif" required>
+                <br>
+                <label for="passions">Passions:</label>
+                <br>
+                <input type="checkbox" name="passions" id="informatique" value="Informatique" checked required>
+                <label for="informatique">Informatique</label><br>
+                <input type="checkbox" name="passions" id="voyages" value="Voyages">
+                <label for="voyages">Voyages</label><br>
+                <input type="checkbox" name="passions" id="sport" value="Sport">
+                <label for="sport">Sport</label><br>
+                <input type="checkbox" name="passions" id="lecture" value="Lecture">
+                <label for="lecture">Lecture</label><br>
+                <button type="submit" name="submit">submit</button>
+            </form>
+        </section>
+   <footer class="container mx-auto flex flex-row gap-6 p-3 bg-black text-red-600">
+        <p class="center-align">Créer par Noiret Michaël</p>
+    </footer>
+</body>
+</html>
