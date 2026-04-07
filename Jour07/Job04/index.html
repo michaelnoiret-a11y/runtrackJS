@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header>
+        <nav class="teal lighten-2 white-text">
+            <div class="center-align">
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Accueil</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Inscription</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Connexion</a>
+        <a href="http://localhost/runtrackJS/Jour07/Job01/">Rechercher</a>
+        </nav>
+        </div>
+        </header>
+        <section>
+            <form class="center-align" method="post">
+                <p>
+      <label>
+        <input name="civilite" type="radio" checked required />
+        <span class="blue-text">Mme</span>
+      </label>
+    </p>
+                <p>
+      <label>
+        <input name="civilite" type="radio" />
+        <span class="red-text">Mr</span>
+      </label>
+    </p>
+                <input type="text" name="prenom" placeholder="prenom" required>
+                <br>
+                <input type="text" name="nom" placeholder="nom" required>
+                <br>
+                <input type="text" name="adresse" placeholder="adresse" required>
+                <br>
+                <input type="email" name="email" placeholder="email" required>
+                <br>
+                <input type="email" name="email verif" placeholder="email verif" required>
+                <br>
+                <input type="password" name="mot de passe" placeholder="mot de passe" required>
+                <br>
+                <input type="password" name="mot de passe verif" placeholder="mot de passe verif" required>
+                <br>
+                <form action="#">
+                <p>
+                <label>
+                    <input type="checkbox" checked="checked"/>
+                    <span>Informatique</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input type="checkbox" disabled="disabled" />
+                    <span>Voyages</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <span>Sport</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input id="indeterminate-checkbox" type="checkbox" checked="checked" disabled="disabled" />
+                    <span>Lecture</span>
+                </label>
+                </p>
+            </form>
+        </section>
+    <footer>
+    </footer>
+</body>
+</html>
