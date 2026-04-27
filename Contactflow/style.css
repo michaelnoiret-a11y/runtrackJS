@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    justify-content: left;
+    align-items: flex-start;
+    
+    /* background-image: ""; */
+}
+
+/* .rechercher { position: relative; }
+            .rechercher input[type="text"] { position: absolute; left: 0; width: 100%; }
+            .rechercher button[type="submit"] { position: absolute; right: -4px; } */
+
+input {
+    border-radius: 10px;
+    background-color: rgb(49, 49, 49);
+    color: rgb(67, 66, 66);
+}
+
+button {
+    display: flex;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    size: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    gap: 10px;
+    margin: 10px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+}
+/* .modifier {
+    color: blue;
+} */
+
+/* .supprimer {
+    color: red;
+} */
+
+/* #suggestions {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    max-width: 300px;
+}
+
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #f0f0f0;
+} */
