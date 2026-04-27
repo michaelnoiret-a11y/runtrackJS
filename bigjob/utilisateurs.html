@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/test.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+    <!-- La librairie fullcalendar -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js' defer></script>
+    <!-- Permet de traduire les boutons, le mois, jour et de mettre le lundi en premier jour de la semaine  -->
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/locales/fr.global.min.js' defer></script>
+</head>
+<body>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+    <header>
+        <a href="inscription.html">inscription</a>
+        <a href="connexion.html">Connexion</a>
+        <a href="utilisateurs.html">utilisateurs</a>
+        <a href="admin.html">administrateurs</a>
+        <br>
+        <br>
+    </header>
+    
+    <!-- Élément pour afficher le calendrier  -->
+    <div id='calendar'></div>
+</body>
+</div>
+</html>

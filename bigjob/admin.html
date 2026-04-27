@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+</head>
+<body>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 bg-white">
+    <header class="bg-blue-600">
+        <a class="bg-blue-800" href="inscription.html">inscription</a>
+        <a class="bg-white" href="connexion.html">Connexion</a>
+        <a class="bg-red-600" href="utilisateurs.html">utilisateurs</a>
+        <a class="bg-blue-800" href="admin.html">administrateurs</a>
+        <br>
+    </header>
+    <form method="post" class="bg-red-600">
+        <select name="autorisationPresence" id="">
+            <option class="bg-red-600" value="accepter">accepter</option>
+            <option value="refuser">refuser</option>
+            </select>
+            <input class="bg-blue-800" type="submit" value="submit">
+    </form>
+    <form class="bg-white" method="post">
+        <input class="bg-red-600" type="text" name="AjoutDroit" placeholder="">
+        <br>
+        <input class="bg-blue-600" type="submit" name="submit" value="submit">
+    </form>
+    <h1 id=""></h1>
+</div>
+<footer class="bg-red-600">
+        <a class="bg-blue-800" href="inscription.html">inscription</a>
+        <a class="bg-white" href="connexion.html">Connexion</a>
+        <a class="bg-red-600" href="utilisateurs.html">utilisateurs</a>
+        <a class="bg-blue-800" href="admin.html">administrateurs</a>
+        <br>
+</footer>
+</body>
+</html>
