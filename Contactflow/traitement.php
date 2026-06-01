@@ -26,4 +26,3 @@ try {
         "message" => "Erreur : " . $e->getMessage()
     ]);
 }
-
